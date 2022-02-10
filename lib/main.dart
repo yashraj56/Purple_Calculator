@@ -74,10 +74,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: EdgeInsets.fromLTRB(30.0, 60.0, 0.0, 0.0),
                   child: Text(
                     'Calculator ',
-                    style: TextStyle(fontSize: 30.0,
-                    fontWeight: FontWeight.w500,
+                    style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.w500,
                       fontFamily: 'Raleway',
-
                     ),
                   ),
                 ),
@@ -85,9 +85,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Center(
                 child: Container(
                   padding: EdgeInsets.fromLTRB(0.0, 75.0, 0.0, 0.0),
-                  child: Text('©_GitHub/yashraj56',
-                    style: TextStyle(fontSize: 11.0,fontWeight: FontWeight.w400
-                    ),
+                  child: Text(
+                    '©_GitHub/yashraj56',
+                    style:
+                        TextStyle(fontSize: 11.0, fontWeight: FontWeight.w400),
                   ),
                 ),
               ),
@@ -106,7 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(fontSize: 40),
                     ),
                   ),
-
                   Container(
                     padding: EdgeInsets.fromLTRB(0.0, 20.0, 30.0, 0.0),
                     alignment: Alignment.centerRight,
@@ -163,8 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.deepPurple,
                       textcolor: Colors.white,
                     );
-                  }
-                  else if (index == buttons.length - 2) {
+                  } else if (index == buttons.length - 2) {
                     return MyButton(
                       buttontapped: () {
                         setState(() {
@@ -175,7 +174,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.deepPurple,
                       textcolor: Colors.white,
                     );
-                  }else {
+                  } else {
                     return MyButton(
                       buttontapped: () {
                         setState(() {
